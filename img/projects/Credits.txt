@@ -1,0 +1,15 @@
+Icon: tic-tac-toe
+Type: SVG
+Credits: Freepik
+
+Icon: pendrive
+Type: SVG
+Credits: Smashicons
+
+Icon: crawler
+Type: SVG
+Credits: Pixelmetuup
+
+Icon: brain
+Type: SVG
+Credits: Srip

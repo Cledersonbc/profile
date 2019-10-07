@@ -1,0 +1,32 @@
+#profile-img img {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 100%;
+}
+#profile-img img:hover {
+    filter: drop-shadow(5px 5px 18px #ccc);
+    cursor: pointer;
+}
+#background-profile {
+    margin-bottom: 0;
+    background: url('../img/background.jpg');
+    background-size: 100% 350px;
+    height: 220px;
+}
+#profile-status {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #ffffff;
+    width: 100%;
+    text-shadow: 2px 2px 2px #000000;
+}
+#profile-projects img {
+    width: 80px;
+}
+#profile-education img, #profile-courses img {
+    padding: 15px;
+    width: 120px;
+    filter: drop-shadow(1px 1px 5px #ccc);
+    border-radius: 100%;
+}
