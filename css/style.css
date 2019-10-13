@@ -43,5 +43,6 @@ p {
     #profile-background {
         width: 100%;
         height: 100%;
+        transform: translate3d(-50%, 0px, 0px) !important;
     }
 }
