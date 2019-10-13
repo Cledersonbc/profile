@@ -4,6 +4,9 @@ html {
 p {
     text-align: justify;
 }
+nav {
+    z-index: 999;
+}
 #profile-img img {
     margin-top: 20px;
     width: 150px;
@@ -35,7 +38,10 @@ p {
     filter: drop-shadow(1px 1px 5px #ccc);
     border-radius: 100%;
 }
-
+.sticky {
+    position: fixed;
+    top: 0;
+}
 /* Materialize */
 .parallax-container {
     height: 220px !important;
