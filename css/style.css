@@ -41,6 +41,7 @@ p {
 /* Parallax */
 @media only screen and (max-width: 600px) {
     #profile-background {
-        width: 190%;
+        width: 100%;
+        height: 100%;
     }
 }
