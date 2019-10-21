@@ -1,0 +1,28 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Clederson's profile on Github Pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cledersonbc/profile.git"
+  },
+  "keywords": [
+    "clederson"
+  ],
+  "author": "Clederson Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cledersonbc/profile/issues"
+  },
+  "homepage": "https://github.com/Cledersonbc/profile#readme",
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-cli": "^1.3.2",
+    "grunt-ts": "^6.0.0-beta.22",
+    "typescript": "^3.6.4"
+  }
+}
