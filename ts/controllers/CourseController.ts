@@ -1,16 +1,17 @@
-import { Course } from "../models/index";
-import { CourseView } from "../views/index";
+import { Course } from '../models/index';
+import { CourseView } from '../views/index';
+import { Controller } from './index';
 
-export class CourseController {
+export class CourseController implements Controller<Course> {
     
-    addCourse(course: Course): void {
+    add(course: Course): void {
         const courseView = new CourseView("#courses-list");
         courseView.updateList(course);
     }
 
-    addCourses(courses: Course[]): void {
+    addAll(courses: Course[]): void {
         for (let course of courses) {
-            this.addCourse(course);
+            this.add(course);
         }
     }
 }

@@ -1,20 +1,27 @@
-import { CourseController } from './controllers/index';
-import { Course } from './models/index';
-import { CourseData } from './data/index';
+import { CourseController, ProjectController } from './controllers/index';
+import { CourseData, ProjectData } from './data/index';
 
 export class App {
 
     start(): void {
         this.showWarningMessage();
         this.loadCourses();
+        this.loadProjects();
         this.stickyMenu();
         
     }
 
+    private loadProjects(): void {
+        let projectData = new ProjectData();
+        let controller = new ProjectController();
+        controller.addAll(projectData.get());
+    }
+
+
     private loadCourses(): void {
         let courseData = new CourseData();
         let controller = new CourseController();
-        controller.addCourses(courseData.get());
+        controller.addAll(courseData.get());
     }
 
     private showWarningMessage(): void {

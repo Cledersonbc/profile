@@ -1,4 +1,4 @@
-System.register("ts/models/Course", [], function (exports_1, context_1) {
+System.register("ts/controllers/Controller", [], function (exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     return {
@@ -7,7 +7,7 @@ System.register("ts/models/Course", [], function (exports_1, context_1) {
         }
     };
 });
-System.register("ts/models/index", [], function (exports_2, context_2) {
+System.register("ts/models/Course", [], function (exports_2, context_2) {
     "use strict";
     var __moduleName = context_2 && context_2.id;
     return {
@@ -16,10 +16,28 @@ System.register("ts/models/index", [], function (exports_2, context_2) {
         }
     };
 });
-System.register("ts/views/View", [], function (exports_3, context_3) {
+System.register("ts/models/Project", [], function (exports_3, context_3) {
+    "use strict";
+    var __moduleName = context_3 && context_3.id;
+    return {
+        setters: [],
+        execute: function () {
+        }
+    };
+});
+System.register("ts/models/index", [], function (exports_4, context_4) {
+    "use strict";
+    var __moduleName = context_4 && context_4.id;
+    return {
+        setters: [],
+        execute: function () {
+        }
+    };
+});
+System.register("ts/views/View", [], function (exports_5, context_5) {
     "use strict";
     var View;
-    var __moduleName = context_3 && context_3.id;
+    var __moduleName = context_5 && context_5.id;
     return {
         setters: [],
         execute: function () {
@@ -32,14 +50,14 @@ System.register("ts/views/View", [], function (exports_3, context_3) {
                     this._element.html(template + this._element.html());
                 }
             };
-            exports_3("View", View);
+            exports_5("View", View);
         }
     };
 });
-System.register("ts/views/CourseView", ["ts/views/View"], function (exports_4, context_4) {
+System.register("ts/views/CourseView", ["ts/views/View"], function (exports_6, context_6) {
     "use strict";
     var View_1, CourseView;
-    var __moduleName = context_4 && context_4.id;
+    var __moduleName = context_6 && context_6.id;
     return {
         setters: [
             function (View_1_1) {
@@ -72,19 +90,57 @@ System.register("ts/views/CourseView", ["ts/views/View"], function (exports_4, c
         `;
                 }
             };
-            exports_4("CourseView", CourseView);
+            exports_6("CourseView", CourseView);
         }
     };
 });
-System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView"], function (exports_5, context_5) {
+System.register("ts/views/ProjectView", ["ts/views/index"], function (exports_7, context_7) {
     "use strict";
-    var __moduleName = context_5 && context_5.id;
+    var index_1, ProjectView;
+    var __moduleName = context_7 && context_7.id;
+    return {
+        setters: [
+            function (index_1_1) {
+                index_1 = index_1_1;
+            }
+        ],
+        execute: function () {
+            ProjectView = class ProjectView extends index_1.View {
+                template(project) {
+                    return `
+        <div class="col s12 m12">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col m2 s12 center">
+                            <img src="${project.logo}">
+                        </div>
+                        <div class="col m10 s12">
+                            <span class="card-title">
+                                <a href="${project.url}" target="_blank">${project.name}</a>
+                            </span>
+                            ${project.description}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+                }
+            };
+            exports_7("ProjectView", ProjectView);
+        }
+    };
+});
+System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView", "ts/views/ProjectView"], function (exports_8, context_8) {
+    "use strict";
+    var __moduleName = context_8 && context_8.id;
     function exportStar_1(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
         }
-        exports_5(exports);
+        exports_8(exports);
     }
     return {
         setters: [
@@ -93,71 +149,103 @@ System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView"], func
             },
             function (CourseView_1_1) {
                 exportStar_1(CourseView_1_1);
+            },
+            function (ProjectView_1_1) {
+                exportStar_1(ProjectView_1_1);
             }
         ],
         execute: function () {
         }
     };
 });
-System.register("ts/controllers/CourseController", ["ts/views/index"], function (exports_6, context_6) {
+System.register("ts/controllers/CourseController", ["ts/views/index"], function (exports_9, context_9) {
     "use strict";
-    var index_1, CourseController;
-    var __moduleName = context_6 && context_6.id;
+    var index_2, CourseController;
+    var __moduleName = context_9 && context_9.id;
     return {
         setters: [
-            function (index_1_1) {
-                index_1 = index_1_1;
+            function (index_2_1) {
+                index_2 = index_2_1;
             }
         ],
         execute: function () {
             CourseController = class CourseController {
-                addCourse(course) {
-                    const courseView = new index_1.CourseView("#courses-list");
+                add(course) {
+                    const courseView = new index_2.CourseView("#courses-list");
                     courseView.updateList(course);
                 }
-                addCourses(courses) {
+                addAll(courses) {
                     for (let course of courses) {
-                        this.addCourse(course);
+                        this.add(course);
                     }
                 }
             };
-            exports_6("CourseController", CourseController);
+            exports_9("CourseController", CourseController);
         }
     };
 });
-System.register("ts/controllers/index", ["ts/controllers/CourseController"], function (exports_7, context_7) {
+System.register("ts/controllers/ProjectController", ["ts/views/index"], function (exports_10, context_10) {
     "use strict";
-    var __moduleName = context_7 && context_7.id;
+    var index_3, ProjectController;
+    var __moduleName = context_10 && context_10.id;
+    return {
+        setters: [
+            function (index_3_1) {
+                index_3 = index_3_1;
+            }
+        ],
+        execute: function () {
+            ProjectController = class ProjectController {
+                add(project) {
+                    const projectView = new index_3.ProjectView("#projects-list");
+                    projectView.updateList(project);
+                }
+                addAll(projects) {
+                    for (let project of projects) {
+                        this.add(project);
+                    }
+                }
+            };
+            exports_10("ProjectController", ProjectController);
+        }
+    };
+});
+System.register("ts/controllers/index", ["ts/controllers/CourseController", "ts/controllers/ProjectController"], function (exports_11, context_11) {
+    "use strict";
+    var __moduleName = context_11 && context_11.id;
     function exportStar_2(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
         }
-        exports_7(exports);
+        exports_11(exports);
     }
     return {
         setters: [
             function (CourseController_1_1) {
                 exportStar_2(CourseController_1_1);
+            },
+            function (ProjectController_1_1) {
+                exportStar_2(ProjectController_1_1);
             }
         ],
         execute: function () {
         }
     };
 });
-System.register("ts/data/Data", [], function (exports_8, context_8) {
+System.register("ts/data/Data", [], function (exports_12, context_12) {
     "use strict";
-    var __moduleName = context_8 && context_8.id;
+    var __moduleName = context_12 && context_12.id;
     return {
         setters: [],
         execute: function () {
         }
     };
 });
-System.register("ts/data/CourseData", [], function (exports_9, context_9) {
+System.register("ts/data/CourseData", [], function (exports_13, context_13) {
     "use strict";
     var CourseData;
-    var __moduleName = context_9 && context_9.id;
+    var __moduleName = context_13 && context_13.id;
     return {
         setters: [],
         execute: function () {
@@ -385,41 +473,92 @@ System.register("ts/data/CourseData", [], function (exports_9, context_9) {
                     ];
                 }
             };
-            exports_9("CourseData", CourseData);
+            exports_13("CourseData", CourseData);
         }
     };
 });
-System.register("ts/data/index", ["ts/data/CourseData"], function (exports_10, context_10) {
+System.register("ts/data/ProjectData", [], function (exports_14, context_14) {
     "use strict";
-    var __moduleName = context_10 && context_10.id;
+    var ProjectData;
+    var __moduleName = context_14 && context_14.id;
+    return {
+        setters: [],
+        execute: function () {
+            ProjectData = class ProjectData {
+                get() {
+                    const rootPrefix = '/profile/';
+                    return [
+                        {
+                            logo: `${rootPrefix}img/projects/brain.svg`,
+                            name: 'Av-ned-herrmann',
+                            url: 'https://github.com/Cledersonbc/av-ned-herrmann',
+                            description: '<p>Aplicação desenvolvida em Java com Swing para análise comportamental baseada nos estudos de Ned Herrmann.</p><p>Começou como um trabalho na faculdade para a disciplina de Programação Orientada a Objetos, mas achei interessante publicá-lo no Github e também criar uma versão web para o teste. O teste indica o seu tipo de perfil comportamental com base nas suas respostas. <a href="https://github.com/Cledersonbc/av-ned-herrmann" target="_blank">[Ler mais]</a></p>'
+                        },
+                        {
+                            logo: `${rootPrefix}img/projects/crawler.svg`,
+                            name: 'Feedscrapy',
+                            url: 'https://github.com/Cledersonbc/feedscrapy',
+                            description: '<p>Web Crawler, desenvolvido em Python, que sonda por assuntos específicos em sites, portais de notícias e então envia-os para o e-mail da pessoa.</p><p>Criei esse bot durante a <a href="https://pt.wikipedia.org/wiki/Greve_dos_caminhoneiros_no_Brasil_em_2018" target="_blank">greve dos caminhoneiros no Brasil</a>. Como dependia (e ainda dependo) do transporte público para ir ao trabalho, precisava a todo momento estar atento às notícias que chegavam sobre a greve. Então o construí e o deixei rodando em um mini-computador Raspberry para alimentar meu e-mail. <a href="https://github.com/Cledersonbc/feedscrapy" target="_blank">[Ler mais]</a></p>'
+                        },
+                        {
+                            logo: `${rootPrefix}img/projects/pendrive.svg`,
+                            name: 'Restaura-pendrive',
+                            url: 'https://github.com/Cledersonbc/restaura-pendrive',
+                            description: '<p>Ferramenta desenvolvida em Java para restaurar arquivos de pendrive ocultados por vírus.</p><p>Comecei a trabalhar nessa ferramenta ainda na faculdade, por conta dos computadores em lojas de impressão e xérox que eram infestados por vírus. Mais tarde, essa ferramenta ajudou não só a mim como também outros alunos que passavam pelo mesmo. <a href="https://github.com/Cledersonbc/restaura-pendrive" target="_blank">[Ler mais]</a></p>'
+                        },
+                        {
+                            logo: `${rootPrefix}img/projects/autociencia.png`,
+                            name: 'Autociência',
+                            url: 'https://autociencia.blogspot.com/',
+                            description: '<p>Blog para divulgação de ciência e tecnologia, com ênfase na ciência da computação e engenharia de software.</p><p>É um projeto que criei com um amigo do ensino técnico e o mantemos até o momento. <a href="https://autociencia.blogspot.com/" target="_blank">[Ler mais]</a></p>'
+                        },
+                        {
+                            logo: `${rootPrefix}img/projects/tic-tac-toe.svg`,
+                            name: 'Tic-tac-toe-minimax',
+                            url: 'https://github.com/Cledersonbc/tic-tac-toe-minimax',
+                            description: '<p>Implementação em Python do algoritmo Minimax para criar uma inteligência artificial para o jogo da velha.</p><p>É o meu projeto mais popular no Github, além de também ser bem difundido por estudantes de IA em vários países. <a href="https://github.com/Cledersonbc/tic-tac-toe-minimax" target="_blank">[Ler mais]</a></p>'
+                        }
+                    ];
+                }
+            };
+            exports_14("ProjectData", ProjectData);
+        }
+    };
+});
+System.register("ts/data/index", ["ts/data/CourseData", "ts/data/ProjectData"], function (exports_15, context_15) {
+    "use strict";
+    var __moduleName = context_15 && context_15.id;
     function exportStar_3(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
         }
-        exports_10(exports);
+        exports_15(exports);
     }
     return {
         setters: [
             function (CourseData_1_1) {
                 exportStar_3(CourseData_1_1);
+            },
+            function (ProjectData_1_1) {
+                exportStar_3(ProjectData_1_1);
             }
         ],
         execute: function () {
         }
     };
 });
-System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (exports_11, context_11) {
+System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (exports_16, context_16) {
     "use strict";
-    var index_2, index_3, App;
-    var __moduleName = context_11 && context_11.id;
+    var index_4, index_5, App;
+    var __moduleName = context_16 && context_16.id;
     return {
         setters: [
-            function (index_2_1) {
-                index_2 = index_2_1;
+            function (index_4_1) {
+                index_4 = index_4_1;
             },
-            function (index_3_1) {
-                index_3 = index_3_1;
+            function (index_5_1) {
+                index_5 = index_5_1;
             }
         ],
         execute: function () {
@@ -427,12 +566,18 @@ System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (e
                 start() {
                     this.showWarningMessage();
                     this.loadCourses();
+                    this.loadProjects();
                     this.stickyMenu();
                 }
+                loadProjects() {
+                    let projectData = new index_5.ProjectData();
+                    let controller = new index_4.ProjectController();
+                    controller.addAll(projectData.get());
+                }
                 loadCourses() {
-                    let courseData = new index_3.CourseData();
-                    let controller = new index_2.CourseController();
-                    controller.addCourses(courseData.get());
+                    let courseData = new index_5.CourseData();
+                    let controller = new index_4.CourseController();
+                    controller.addAll(courseData.get());
                 }
                 showWarningMessage() {
                     console.warn("Author: Clederson Cruz\n" +
@@ -452,7 +597,7 @@ System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (e
                     };
                 }
             };
-            exports_11("App", App);
+            exports_16("App", App);
         }
     };
 });
