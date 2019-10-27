@@ -498,6 +498,27 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             duration: '14/06/2019 - 15/06/2019 (12h)'
                         },
                         {
+                            logo: `${rootPrefix}img/courses/alura.png`,
+                            name: 'Consultas no SQL: avançando no SQL com MySQL',
+                            place: 'Alura',
+                            originalTitle: 'Consultas no SQL: avançando no SQL com MySQL',
+                            duration: '15/06/2019 - 22/06/2019 (14h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/alura.png`,
+                            name: 'TypeScript parte 1: evoluindo seu JavaScript',
+                            place: 'Alura',
+                            originalTitle: 'TypeScript parte 1: evoluindo seu JavaScript',
+                            duration: '03/07/2019 - 05/07/2019 (8h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/alura.png`,
+                            name: 'TypeScript parte 2: mais técnicas e boas práticas',
+                            place: 'Alura',
+                            originalTitle: 'TypeScript parte 2: mais técnicas e boas práticas',
+                            duration: '05/07/2019 - 10/07/2019 (10h)'
+                        },
+                        {
                             logo: `${rootPrefix}img/courses/accenture.jpg`,
                             name: 'REST API with Java: Java APIs with JSON, Maven, & Spring',
                             place: 'Accenture',
