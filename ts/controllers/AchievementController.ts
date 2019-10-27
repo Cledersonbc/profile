@@ -5,8 +5,8 @@ import { AchievementView } from '../views/index';
 export class AchievementController implements Controller<Achievement> {
 
     add(achievement: Achievement): void {
-        const achievementView = new AchievementView('#achievements-list');
-        achievementView.updateList(achievement);
+        const view = new AchievementView('#achievements-list');
+        view.updateList(achievement);
     }
 
     addAll(achievements: Achievement[]): void {

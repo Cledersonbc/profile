@@ -5,8 +5,8 @@ import { Controller } from './index';
 export class CourseController implements Controller<Course> {
     
     add(course: Course): void {
-        const courseView = new CourseView("#courses-list");
-        courseView.updateList(course);
+        const view = new CourseView("#courses-list");
+        view.updateList(course);
     }
 
     addAll(courses: Course[]): void {

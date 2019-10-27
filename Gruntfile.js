@@ -12,8 +12,7 @@ module.exports = function(grunt) {
                     removeComments: true,
                     module: 'system',
                     strictNullChecks: true,
-                    sourceMap: true,
-                    experimentalDecorators: true
+                    sourceMap: true
                 }
             }
         },

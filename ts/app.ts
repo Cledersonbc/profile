@@ -1,5 +1,5 @@
-import { CourseController, ProjectController, AchievementController } from './controllers/index';
-import { CourseData, ProjectData, AchievementData } from './data/index';
+import { CourseController, ProjectController, AchievementController, EducationController } from './controllers/index';
+import { CourseData, ProjectData, AchievementData, EducationData } from './data/index';
 
 export class App {
 
@@ -7,6 +7,7 @@ export class App {
         this.showWarningMessage();
         this.stickyMenu();
         this.loadProjects();
+        this.loadEducations();
         this.loadCourses();
         this.loadAchievements();
     }
@@ -15,6 +16,12 @@ export class App {
         let projectData = new ProjectData();
         let controller = new ProjectController();
         controller.addAll(projectData.get());
+    }
+
+    private loadEducations(): void {
+        let educationData = new EducationData();
+        let controller = new EducationController();
+        controller.addAll(educationData.get());
     }
 
     private loadCourses(): void {
