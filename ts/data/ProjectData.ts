@@ -1,5 +1,5 @@
 import { Project } from "../models/index";
-import { Data } from "./Data";
+import { Data } from "./index";
 
 export class ProjectData implements Data<Project> {
 

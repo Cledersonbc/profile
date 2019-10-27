@@ -25,7 +25,7 @@ System.register("ts/models/Project", [], function (exports_3, context_3) {
         }
     };
 });
-System.register("ts/models/index", [], function (exports_4, context_4) {
+System.register("ts/models/Achievement", [], function (exports_4, context_4) {
     "use strict";
     var __moduleName = context_4 && context_4.id;
     return {
@@ -34,10 +34,19 @@ System.register("ts/models/index", [], function (exports_4, context_4) {
         }
     };
 });
-System.register("ts/views/View", [], function (exports_5, context_5) {
+System.register("ts/models/index", [], function (exports_5, context_5) {
+    "use strict";
+    var __moduleName = context_5 && context_5.id;
+    return {
+        setters: [],
+        execute: function () {
+        }
+    };
+});
+System.register("ts/views/View", [], function (exports_6, context_6) {
     "use strict";
     var View;
-    var __moduleName = context_5 && context_5.id;
+    var __moduleName = context_6 && context_6.id;
     return {
         setters: [],
         execute: function () {
@@ -50,14 +59,14 @@ System.register("ts/views/View", [], function (exports_5, context_5) {
                     this._element.html(template + this._element.html());
                 }
             };
-            exports_5("View", View);
+            exports_6("View", View);
         }
     };
 });
-System.register("ts/views/CourseView", ["ts/views/View"], function (exports_6, context_6) {
+System.register("ts/views/CourseView", ["ts/views/View"], function (exports_7, context_7) {
     "use strict";
     var View_1, CourseView;
-    var __moduleName = context_6 && context_6.id;
+    var __moduleName = context_7 && context_7.id;
     return {
         setters: [
             function (View_1_1) {
@@ -90,14 +99,14 @@ System.register("ts/views/CourseView", ["ts/views/View"], function (exports_6, c
         `;
                 }
             };
-            exports_6("CourseView", CourseView);
+            exports_7("CourseView", CourseView);
         }
     };
 });
-System.register("ts/views/ProjectView", ["ts/views/index"], function (exports_7, context_7) {
+System.register("ts/views/ProjectView", ["ts/views/index"], function (exports_8, context_8) {
     "use strict";
     var index_1, ProjectView;
-    var __moduleName = context_7 && context_7.id;
+    var __moduleName = context_8 && context_8.id;
     return {
         setters: [
             function (index_1_1) {
@@ -128,19 +137,50 @@ System.register("ts/views/ProjectView", ["ts/views/index"], function (exports_7,
         `;
                 }
             };
-            exports_7("ProjectView", ProjectView);
+            exports_8("ProjectView", ProjectView);
         }
     };
 });
-System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView", "ts/views/ProjectView"], function (exports_8, context_8) {
+System.register("ts/views/AchievementView", ["ts/views/index"], function (exports_9, context_9) {
     "use strict";
-    var __moduleName = context_8 && context_8.id;
+    var index_2, AchievementView;
+    var __moduleName = context_9 && context_9.id;
+    return {
+        setters: [
+            function (index_2_1) {
+                index_2 = index_2_1;
+            }
+        ],
+        execute: function () {
+            AchievementView = class AchievementView extends index_2.View {
+                template(achievement) {
+                    return `
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">${achievement.title}</span>
+                            ${achievement.description}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+                }
+            };
+            exports_9("AchievementView", AchievementView);
+        }
+    };
+});
+System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView", "ts/views/ProjectView", "ts/views/AchievementView"], function (exports_10, context_10) {
+    "use strict";
+    var __moduleName = context_10 && context_10.id;
     function exportStar_1(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
         }
-        exports_8(exports);
+        exports_10(exports);
     }
     return {
         setters: [
@@ -152,26 +192,29 @@ System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView", "ts/v
             },
             function (ProjectView_1_1) {
                 exportStar_1(ProjectView_1_1);
+            },
+            function (AchievementView_1_1) {
+                exportStar_1(AchievementView_1_1);
             }
         ],
         execute: function () {
         }
     };
 });
-System.register("ts/controllers/CourseController", ["ts/views/index"], function (exports_9, context_9) {
+System.register("ts/controllers/CourseController", ["ts/views/index"], function (exports_11, context_11) {
     "use strict";
-    var index_2, CourseController;
-    var __moduleName = context_9 && context_9.id;
+    var index_3, CourseController;
+    var __moduleName = context_11 && context_11.id;
     return {
         setters: [
-            function (index_2_1) {
-                index_2 = index_2_1;
+            function (index_3_1) {
+                index_3 = index_3_1;
             }
         ],
         execute: function () {
             CourseController = class CourseController {
                 add(course) {
-                    const courseView = new index_2.CourseView("#courses-list");
+                    const courseView = new index_3.CourseView("#courses-list");
                     courseView.updateList(course);
                 }
                 addAll(courses) {
@@ -180,24 +223,24 @@ System.register("ts/controllers/CourseController", ["ts/views/index"], function 
                     }
                 }
             };
-            exports_9("CourseController", CourseController);
+            exports_11("CourseController", CourseController);
         }
     };
 });
-System.register("ts/controllers/ProjectController", ["ts/views/index"], function (exports_10, context_10) {
+System.register("ts/controllers/ProjectController", ["ts/views/index"], function (exports_12, context_12) {
     "use strict";
-    var index_3, ProjectController;
-    var __moduleName = context_10 && context_10.id;
+    var index_4, ProjectController;
+    var __moduleName = context_12 && context_12.id;
     return {
         setters: [
-            function (index_3_1) {
-                index_3 = index_3_1;
+            function (index_4_1) {
+                index_4 = index_4_1;
             }
         ],
         execute: function () {
             ProjectController = class ProjectController {
                 add(project) {
-                    const projectView = new index_3.ProjectView("#projects-list");
+                    const projectView = new index_4.ProjectView("#projects-list");
                     projectView.updateList(project);
                 }
                 addAll(projects) {
@@ -206,19 +249,45 @@ System.register("ts/controllers/ProjectController", ["ts/views/index"], function
                     }
                 }
             };
-            exports_10("ProjectController", ProjectController);
+            exports_12("ProjectController", ProjectController);
         }
     };
 });
-System.register("ts/controllers/index", ["ts/controllers/CourseController", "ts/controllers/ProjectController"], function (exports_11, context_11) {
+System.register("ts/controllers/AchievementController", ["ts/views/index"], function (exports_13, context_13) {
     "use strict";
-    var __moduleName = context_11 && context_11.id;
+    var index_5, AchievementController;
+    var __moduleName = context_13 && context_13.id;
+    return {
+        setters: [
+            function (index_5_1) {
+                index_5 = index_5_1;
+            }
+        ],
+        execute: function () {
+            AchievementController = class AchievementController {
+                add(achievement) {
+                    const achievementView = new index_5.AchievementView('#achievements-list');
+                    achievementView.updateList(achievement);
+                }
+                addAll(achievements) {
+                    for (let achievement of achievements) {
+                        this.add(achievement);
+                    }
+                }
+            };
+            exports_13("AchievementController", AchievementController);
+        }
+    };
+});
+System.register("ts/controllers/index", ["ts/controllers/CourseController", "ts/controllers/ProjectController", "ts/controllers/AchievementController"], function (exports_14, context_14) {
+    "use strict";
+    var __moduleName = context_14 && context_14.id;
     function exportStar_2(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
         }
-        exports_11(exports);
+        exports_14(exports);
     }
     return {
         setters: [
@@ -227,25 +296,28 @@ System.register("ts/controllers/index", ["ts/controllers/CourseController", "ts/
             },
             function (ProjectController_1_1) {
                 exportStar_2(ProjectController_1_1);
+            },
+            function (AchievementController_1_1) {
+                exportStar_2(AchievementController_1_1);
             }
         ],
         execute: function () {
         }
     };
 });
-System.register("ts/data/Data", [], function (exports_12, context_12) {
+System.register("ts/data/Data", [], function (exports_15, context_15) {
     "use strict";
-    var __moduleName = context_12 && context_12.id;
+    var __moduleName = context_15 && context_15.id;
     return {
         setters: [],
         execute: function () {
         }
     };
 });
-System.register("ts/data/CourseData", [], function (exports_13, context_13) {
+System.register("ts/data/CourseData", [], function (exports_16, context_16) {
     "use strict";
     var CourseData;
-    var __moduleName = context_13 && context_13.id;
+    var __moduleName = context_16 && context_16.id;
     return {
         setters: [],
         execute: function () {
@@ -473,14 +545,14 @@ System.register("ts/data/CourseData", [], function (exports_13, context_13) {
                     ];
                 }
             };
-            exports_13("CourseData", CourseData);
+            exports_16("CourseData", CourseData);
         }
     };
 });
-System.register("ts/data/ProjectData", [], function (exports_14, context_14) {
+System.register("ts/data/ProjectData", [], function (exports_17, context_17) {
     "use strict";
     var ProjectData;
-    var __moduleName = context_14 && context_14.id;
+    var __moduleName = context_17 && context_17.id;
     return {
         setters: [],
         execute: function () {
@@ -521,19 +593,56 @@ System.register("ts/data/ProjectData", [], function (exports_14, context_14) {
                     ];
                 }
             };
-            exports_14("ProjectData", ProjectData);
+            exports_17("ProjectData", ProjectData);
         }
     };
 });
-System.register("ts/data/index", ["ts/data/CourseData", "ts/data/ProjectData"], function (exports_15, context_15) {
+System.register("ts/data/AchievementData", [], function (exports_18, context_18) {
     "use strict";
-    var __moduleName = context_15 && context_15.id;
+    var AchievementData;
+    var __moduleName = context_18 && context_18.id;
+    return {
+        setters: [],
+        execute: function () {
+            AchievementData = class AchievementData {
+                get() {
+                    return [
+                        {
+                            title: 'Representante de sala',
+                            description: '<p>Em 2013 e em 2014 fui <b>representante de sala</b> no ensino técnico. Também fui representante de sala na metade do curso na faculdade (2016-2017) e vice-representante na outra metade (2017-2018).</p>'
+                        },
+                        {
+                            title: 'Palestra na faculdade',
+                            description: '<p>Em 2017, na Semana Nacional de Ciência e Tecnologia (SNCT), fui <b>palestrante</b> na <b>Fatec-ZL</b> sobre <b>Escritos digitais e cibercultura – uma leitura das narrativas literária fílmica: Fahrenheit 451</b>. Também palestrei um pouco sobre distopia da ficção científica, citando obras reconhecidas do gênero.</p>'
+                        },
+                        {
+                            title: 'Monitoria voluntária na faculdade',
+                            description: '<p>Em 2017, durante dois semestres desse mesmo ano, fui <b>monitor de cálculo</b> na <b>Fatec-ZL</b>. Ensinei e tirei dúvidas de alunos sobre funções, taxa de variação média, limites, derivadas e integrais.</p>'
+                        },
+                        {
+                            title: 'Participante do IX Simpósio de Geriatria e Gerontologia',
+                            description: '<p>Em novembro de 2017, fui <b>participante convidado</b> do <b>IX Simpósio de Geriatria e Gerontologia</b> apresentando <b>inovações tecnológicas de baixo custo (uso de Raspberry + RFID + Arduíno)</b> para a área da saúde.</p>'
+                        },
+                        {
+                            title: '1º Artigo publicado',
+                            description: '<p>Em 05 de dezembro de 2018 eu publiquei meu primeiro artigo acadêmico, intitulado "<b>Vigilantismo e Sociedade: controle e poder na era da internet</b>", na <b>EnGeTec</b>.</p>'
+                        }
+                    ];
+                }
+            };
+            exports_18("AchievementData", AchievementData);
+        }
+    };
+});
+System.register("ts/data/index", ["ts/data/CourseData", "ts/data/ProjectData", "ts/data/AchievementData"], function (exports_19, context_19) {
+    "use strict";
+    var __moduleName = context_19 && context_19.id;
     function exportStar_3(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
         }
-        exports_15(exports);
+        exports_19(exports);
     }
     return {
         setters: [
@@ -542,42 +651,51 @@ System.register("ts/data/index", ["ts/data/CourseData", "ts/data/ProjectData"], 
             },
             function (ProjectData_1_1) {
                 exportStar_3(ProjectData_1_1);
+            },
+            function (AchievementData_1_1) {
+                exportStar_3(AchievementData_1_1);
             }
         ],
         execute: function () {
         }
     };
 });
-System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (exports_16, context_16) {
+System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (exports_20, context_20) {
     "use strict";
-    var index_4, index_5, App;
-    var __moduleName = context_16 && context_16.id;
+    var index_6, index_7, App;
+    var __moduleName = context_20 && context_20.id;
     return {
         setters: [
-            function (index_4_1) {
-                index_4 = index_4_1;
+            function (index_6_1) {
+                index_6 = index_6_1;
             },
-            function (index_5_1) {
-                index_5 = index_5_1;
+            function (index_7_1) {
+                index_7 = index_7_1;
             }
         ],
         execute: function () {
             App = class App {
                 start() {
                     this.showWarningMessage();
-                    this.loadCourses();
-                    this.loadProjects();
                     this.stickyMenu();
+                    this.loadProjects();
+                    this.loadCourses();
+                    this.loadAchievements();
                 }
                 loadProjects() {
-                    let projectData = new index_5.ProjectData();
-                    let controller = new index_4.ProjectController();
+                    let projectData = new index_7.ProjectData();
+                    let controller = new index_6.ProjectController();
                     controller.addAll(projectData.get());
                 }
                 loadCourses() {
-                    let courseData = new index_5.CourseData();
-                    let controller = new index_4.CourseController();
+                    let courseData = new index_7.CourseData();
+                    let controller = new index_6.CourseController();
                     controller.addAll(courseData.get());
+                }
+                loadAchievements() {
+                    let achievementData = new index_7.AchievementData();
+                    let controller = new index_6.AchievementController();
+                    controller.addAll(achievementData.get());
                 }
                 showWarningMessage() {
                     console.warn("Author: Clederson Cruz\n" +
@@ -597,7 +715,7 @@ System.register("ts/app", ["ts/controllers/index", "ts/data/index"], function (e
                     };
                 }
             };
-            exports_16("App", App);
+            exports_20("App", App);
         }
     };
 });
