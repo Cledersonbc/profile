@@ -643,6 +643,13 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             place: 'Udemy',
                             originalTitle: 'Introduction to TypeScript',
                             duration: '20/10/2019 (1,1h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/accenture.jpg`,
+                            name: 'Using Docker: Dockerizing Applications',
+                            place: 'Accenture',
+                            originalTitle: 'Using Docker: Dockerizing Applications',
+                            duration: '02/11/2019 (2h)'
                         }
                     ];
                 }
