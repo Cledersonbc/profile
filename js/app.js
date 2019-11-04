@@ -771,7 +771,7 @@ System.register("ts/data/EducationData", [], function (exports_22, context_22) {
                         {
                             logo: `${rootPrefix}img/education/cps.png`,
                             title: 'Pós-graduação: MBA em Tecnologia em Inovação',
-                            course: 'MBA de Tecnologia e Inovação',
+                            course: 'Tecnologia e Inovação',
                             school: 'Unidade de Pós-Graduação, Extensão e Pesquisa do Centro Paula Souza',
                             duration: '2019-2021'
                         }
