@@ -24,6 +24,10 @@ export class AchievementData implements Data<Achievement> {
             {
                 title: '1º Artigo publicado',
                 description: '<p>Em 05 de dezembro de 2018 publiquei meu primeiro artigo acadêmico, intitulado "<b>Vigilantismo e Sociedade: controle e poder na era da internet</b>", na <b>EnGeTec</b>.</p>'
+            },
+            {
+                title: '1ª Apresentação sobre Inteligência Artificial na Pós-graduação',
+                description: '<p>Em novembro de 2019 apresentei meu primeiro trabalho sobre Inteligência Artificial, na pós-graduação, para a disciplina de Sistemas de Informação e Tecnologias sob a perspectiva ética e filosófica. Também discuti os (possíveis) impactos social e mercadológico no contexto da América do Sul.</p>'
             }
         ];
     }
