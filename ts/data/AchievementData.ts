@@ -27,7 +27,7 @@ export class AchievementData implements Data<Achievement> {
             },
             {
                 title: '1ª Apresentação sobre Inteligência Artificial na Pós-graduação',
-                description: '<p>Em novembro de 2019 apresentei meu primeiro trabalho sobre <b>Inteligência Artificial</b>, na pós-graduação, para a disciplina de Sistemas de Informação e Tecnologias sob a perspectiva ética e filosófica. Também discuti os (possíveis) impactos social e mercadológico no contexto da América do Sul.</p>'
+                description: '<p>Em novembro de 2019 apresentei meu primeiro trabalho sobre <b>Inteligência Artificial</b> — na <b>Unidade de Pós-graduação, Extensão e Pesquisa do Centro Paula Souza</b> — para a disciplina de Sistemas de Informação e Tecnologias sob a perspectiva ética e filosófica. Também discuti os (possíveis) impactos social e mercadológico no contexto da América do Sul.</p>'
             }
         ];
     }
