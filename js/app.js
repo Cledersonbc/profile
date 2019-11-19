@@ -650,6 +650,13 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             place: 'Accenture',
                             originalTitle: 'Using Docker: Dockerizing Applications',
                             duration: '02/11/2019 (2h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/accenture.jpg`,
+                            name: 'Privacy by Design',
+                            place: 'Accenture',
+                            originalTitle: 'Privacy by Design',
+                            duration: '17/11/2019 (0,5h)'
                         }
                     ];
                 }
