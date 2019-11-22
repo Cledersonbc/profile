@@ -657,6 +657,13 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             place: 'Accenture',
                             originalTitle: 'Privacy by Design',
                             duration: '17/11/2019 (0,5h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/scylla-university.png`,
+                            name: 'Scylla Essentials – Overview of Scylla and NoSQL Basics',
+                            place: 'Scylla University',
+                            originalTitle: 'Scylla Essentials – Overview of Scylla and NoSQL Basics',
+                            duration: '21/11/2019 - 22/11/2019'
                         }
                     ];
                 }
