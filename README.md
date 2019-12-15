@@ -8,31 +8,33 @@ O projeto foi desenvolvido em:
 * **TypeScript**, para a programação da página como um todo e aplicação da lógica de apresentação.
 
 ## Desenvolvimento com TypeScript
+![TypeScript](img/github/typescript-logo.png)
+
 A aplicação feita em TS está toda modularizada, arquiteturalmente baseada no modelo MVC (*model-view-controller*).
 
-### Model
+### :page_with_curl: Model
 Neste módulo há interfaces que definem os atributos obrigatórios e não-obrigatórios dos modelos de dados.
 
 Um modelo de dados é a abstração de alguma entidade da página que contém características, como um Projeto, um Curso etc. Um Projeto, por exemplo, contém nome, descrição e URL.
 
 
-### View
+### :bar_chart: View
 Neste módulo há classes que definem a representação visual, por meio de *templates*, dos modelos de dados.
 
 Como toda classe exibe um comportamento semelhante — de receber um modelo de dados e representá-lo, a herança foi utilizada para reutilização e redução de código.
 
-### Controller
+### :wrench: Controller
 Neste módulo há classes que combinam modelos com sua respectiva representação visual.
 
 Aplicou-se o mesmo critério de herança neste módulo. Além da herança, estes *controllers* foram preparados para trabalharem com listas de modelos homogêneos, que é uma abordagem que facilita adicionar novos modelos na visualização final.
 
-### Data
+### :books: Data
 Neste módulo há classes que implementam os modelos de dados em si. Em outras palavras, são listas contendo os dados que serão utilizados no preenchimento dos modelos para os demais módulos funcionarem.
 
 A estratégia dessa abordagem é desacoplar o modelo de dados de sua instanciação/preenchimento. Isso faz com que basta adicionar um novo objeto na lista em *data* que automaticamente ele será manipulado pelos outros módulos e representado (após tudo isso ser transpilado).
 
-# Execução
-É necessário instalar todas as dependências do projeto com *npm install* e transpilá-lo com *grunt*. O TypeScript será minificado e transpilado para JavaScript.
+# :gear: Execução
+É necessário instalar todas as dependências do projeto com `npm install` e transpilá-lo com `grunt`. O TypeScript será minificado e transpilado para JavaScript.
 
 O NPM é um gerenciador de pacotes para JavaScript. Cada pacote contém bibliotecas de códigos que foram utilizadas no projeto, feitas por terceiros. Veja cada uma no arquivo `package.json`.
 
