@@ -264,6 +264,13 @@ export class CourseData implements Data<Course> {
                 place: 'Scylla University',
                 originalTitle: 'Scylla Essentials – Overview of Scylla and NoSQL Basics',
                 duration: '21/11/2019 - 22/11/2019'
+            },
+            {
+                logo: `${rootPrefix}img/courses/accenture.jpg`,
+                name: 'AWA 102 - Secure Software Concepts',
+                place: 'Accenture',
+                originalTitle: 'AWA 102 - Secure Software Concepts',
+                duration: '20/02/2020 (expira em 20/02/2023)'
             }
         ];
     }
