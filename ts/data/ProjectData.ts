@@ -25,6 +25,12 @@ export class ProjectData implements Data<Project> {
                 description: '<p>Ferramenta desenvolvida em Java para restaurar arquivos de pendrive ocultados por vírus.</p><p>Comecei a trabalhar nessa ferramenta ainda na faculdade, por conta dos computadores em lojas de impressão e xérox que eram infestados por vírus. Mais tarde, essa ferramenta ajudou não só a mim como também outros alunos que passavam pelo mesmo. <a href="https://github.com/Cledersonbc/restaura-pendrive" target="_blank">[Ler mais]</a></p>'
             },
             {
+                logo: `${rootPrefix}img/projects/summaryze.png`,
+                name: 'Summaryze',
+                url: 'https://github.com/autociencia/summaryze',
+                description: '<p>Uma solução online que gera o sumário de artigos Blogspot baseado nos títulos da publicação. <a href="https://summaryze.herokuapp.com" target="_blank">Você pode testá-la aqui<a/>. A solução teve o back-end feito em Python com Flask e o Front-end em TypeScript com Bulma e SASS.</p><p> O projeto iniciou como um script em Python, mas acabei expandindo-o para que outras pessoas pudessem usar. <a href="https://github.com/autociencia/summaryze" target="_blank">[Ler mais]</a></p>'
+            },
+            {
                 logo: `${rootPrefix}img/projects/autociencia.png`,
                 name: 'Autociência',
                 url: 'https://autociencia.blogspot.com/',
