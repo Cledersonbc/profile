@@ -271,6 +271,13 @@ export class CourseData implements Data<Course> {
                 place: 'Accenture',
                 originalTitle: 'AWA 102 - Secure Software Concepts',
                 duration: '20/02/2020 (expira em 20/02/2023)'
+            },
+            {
+                logo: `${rootPrefix}img/courses/udemy.png`,
+                name: 'Desenvolvimento Seguro de Software',
+                place: 'Udemy',
+                originalTitle: 'Desenvolvimento Seguro de Software',
+                duration: '01/03/2020 - 06/03/2020'
             }
         ];
     }
