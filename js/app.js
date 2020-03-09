@@ -768,7 +768,7 @@ System.register("ts/data/AchievementData", [], function (exports_21, context_21)
                         },
                         {
                             title: '1º Artigo publicado',
-                            description: '<p>Em 05 de dezembro de 2018 publiquei meu primeiro artigo acadêmico, intitulado "<b>Vigilantismo e Sociedade: controle e poder na era da internet</b>", na <b>EnGeTec</b>.</p>'
+                            description: '<p>Em 05 de dezembro de 2018 publiquei meu primeiro artigo acadêmico, intitulado "<b>Vigilantismo e Sociedade: controle e poder na era da internet</b>" nos Anais do 1º Encontro de Gestão e Tecnologia (EnGeTec). <a href="http://fateczl.edu.br/engetec/ANAIS%20DO%201%C2%BA%20ENGETEC%20-%202018.pdf" target="_blank">Disponível aqui</a>, pág. 428.</p>'
                         },
                         {
                             title: '1ª Apresentação sobre Inteligência Artificial na Pós-graduação',
