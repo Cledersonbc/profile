@@ -678,6 +678,20 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             place: 'Udemy',
                             originalTitle: 'Desenvolvimento Seguro de Software',
                             duration: '01/03/2020 - 06/03/2020'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/cps.png`,
+                            name: 'Gestão do Tempo',
+                            place: 'Centro Paula Souza',
+                            originalTitle: 'Gestão do Tempo',
+                            duration: '24/03/2020 - 25/03/2020 (6h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/pluralsight.png`,
+                            name: 'Automated Web Testing with Selenium and WebDriver Using Java',
+                            place: 'Pluralsight',
+                            originalTitle: 'Automated Web Testing with Selenium and WebDriver Using Java',
+                            duration: '27/03/2020 - 28/03/2020 (3,2h)'
                         }
                     ];
                 }
