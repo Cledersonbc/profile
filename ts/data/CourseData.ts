@@ -288,10 +288,17 @@ export class CourseData implements Data<Course> {
             },
             {
                 logo: `${rootPrefix}img/courses/pluralsight.png`,
-                name: 'Automated Web Testing with Selenium and WebDriver Using Java',
+                name: 'Automated Web Testing with Selenium and WebDriver using Java',
                 place: 'Pluralsight',
-                originalTitle: 'Automated Web Testing with Selenium and WebDriver Using Java',
+                originalTitle: 'Automated Web Testing with Selenium and WebDriver using Java',
                 duration: '27/03/2020 - 28/03/2020 (3,2h)'
+            },
+            {
+                logo: `${rootPrefix}img/courses/pluralsight.png`,
+                name: 'Automated Tests in Java with Fluent Interface using WebDriver Selenium',
+                place: 'Pluralsight',
+                originalTitle: 'Automated Tests in Java with Fluent Interface using WebDriver Selenium',
+                duration: '28/03/2020 (1,6h)'
             }
         ];
     }
