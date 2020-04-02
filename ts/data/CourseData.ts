@@ -298,7 +298,7 @@ export class CourseData implements Data<Course> {
                 name: 'Automated Tests in Java with Fluent Interface using WebDriver Selenium',
                 place: 'Pluralsight',
                 originalTitle: 'Automated Tests in Java with Fluent Interface using WebDriver Selenium',
-                duration: '28/03/2020 (1,6h)'
+                duration: '31/03/2020 (1,6h)'
             }
         ];
     }
