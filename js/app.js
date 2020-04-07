@@ -699,6 +699,13 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             place: 'Pluralsight',
                             originalTitle: 'Automated Tests in Java with Fluent Interface using WebDriver Selenium',
                             duration: '31/03/2020 (1,6h)'
+                        },
+                        {
+                            logo: `${rootPrefix}img/courses/pluralsight.png`,
+                            name: 'JUnit 5 Fundamentals',
+                            place: 'Pluralsight',
+                            originalTitle: 'JUnit 5 Fundamentals',
+                            duration: '02/04/2020 - 07/04/2020 (3h)'
                         }
                     ];
                 }
