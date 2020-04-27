@@ -4,10 +4,3 @@ package-lock.json
 
 # ts
 .tscache/
-
-# Jekyll
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata/
-vendor/
