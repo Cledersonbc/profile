@@ -306,6 +306,13 @@ export class CourseData implements Data<Course> {
                 place: 'Pluralsight',
                 originalTitle: 'JUnit 5 Fundamentals',
                 duration: '02/04/2020 - 07/04/2020 (3h)'
+            },
+            {
+                logo: `${rootPrefix}img/courses/accenture.jpg`,
+                name: 'Introduction to Quality Engineering',
+                place: 'Accenture',
+                originalTitle: 'Introduction to Quality Engineering',
+                duration: '07/05/2020 (1h)'
             }
         ];
     }
