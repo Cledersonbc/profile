@@ -165,7 +165,7 @@
                     });
             });
             SystemJS.config({
-                baseURL: '/profile/js' // use '/js' for dev
+                baseURL: './js'
             });
             var app = SystemJS.import('app.min.js');
             app.then(function (script) {
