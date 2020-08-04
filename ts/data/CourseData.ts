@@ -312,6 +312,13 @@ export class CourseData implements Data<Course> {
                 place: 'Accenture',
                 originalTitle: 'Introduction to Quality Engineering',
                 duration: '07/05/2020 (1h)'
+            },
+            {
+                logo: `./img/courses/mackenzie.png`,
+                name: 'Inteligência Artificial e Ferramentas Avançadas de Ciência de Dados',
+                place: 'Universidade Presbiteriana Mackenzie',
+                originalTitle: 'Inteligência Artificial e Ferramentas Avançadas de Ciência de Dados',
+                duration: '04/08/2020 (4h)'
             }
         ];
     }
