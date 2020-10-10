@@ -31,7 +31,7 @@ export class AchievementData implements Data<Achievement> {
             },
             {
                 title: 'Promovido no Mercado de Trabalho durante a Pandemia',
-                description: '<p>Em setembro de 2020, com 1 ano e aproximadamente 5 meses trabalhando como Analista de Sistemas Júnior na empresa multinacional de tecnologia Accenture, <b>fui promovido para uma posição de Pleno durante um momento de pandemia global</b> causado pelo corona vírus com demissões em massa sendo feitas por muitas empresas.</p>'
+                description: '<p>Em setembro de 2020, com 1 ano e aproximadamente 4 meses trabalhando como Analista de Sistemas Júnior na empresa multinacional de tecnologia Accenture, <b>fui promovido para uma posição de Pleno durante um momento de pandemia global</b> causado pelo corona vírus com demissões em massa sendo feitas por muitas empresas.</p>'
             }
         ];
     }
