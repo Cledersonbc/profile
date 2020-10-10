@@ -28,6 +28,10 @@ export class AchievementData implements Data<Achievement> {
             {
                 title: '1ª Apresentação sobre Inteligência Artificial na Pós-graduação',
                 description: '<p>Em novembro de 2019 apresentei meu primeiro trabalho sobre <b>Inteligência Artificial</b> — na <b>Unidade de Pós-graduação, Extensão e Pesquisa do Centro Paula Souza</b> — para a disciplina de Sistemas de Informação e Tecnologias sob a perspectiva ética e filosófica. Também discuti os (possíveis) impactos social e mercadológico no contexto da América do Sul.</p>'
+            },
+            {
+                title: 'Promovido no Mercado de Trabalho durante a Pandemia',
+                description: '<p>Em setembro de 2020, com 1 ano e aproximadamente 5 meses trabalhando como Analista de Sistemas Júnior na empresa multinacional de tecnologia Accenture, <b>fui promovido para uma posição de Pleno durante um momento de pandemia global</b> causado pelo corona vírus com demissões em massa sendo feitas por muitas empresas.</p>'
             }
         ];
     }
