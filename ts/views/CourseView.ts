@@ -4,6 +4,8 @@ import { View } from './View';
 export class CourseView extends View<Course> {
 
     template(course: Course): string {
+        const certificateText = `<p><b>Certificado</b>: <a href="${course.certificate}" target="_blank">Clique aqui para visualizar <sup>&#129125;</sup></a></p>`;
+
         return `
             <div class="col s12 m12">
                 <div class="card">
@@ -19,6 +21,7 @@ export class CourseView extends View<Course> {
                                 <p><b>Local</b>: ${course.place}</p>
                                 <p><b>Título</b>: ${course.originalTitle}</p>
                                 <p><b>Data/Duração</b>: ${course.duration}</p>
+                                ${course.certificate ? certificateText : ''}
                             </div>
                         </div>
                     </div>

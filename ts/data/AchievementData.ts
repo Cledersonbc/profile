@@ -18,6 +18,10 @@ export class AchievementData implements Data<Achievement> {
                 description: '<p>Em 2017, durante dois semestres desse mesmo ano, fui <b>monitor de cálculo</b> na <b>Fatec-ZL</b>. Ensinei e tirei dúvidas de alunos sobre funções, taxa de variação média, limites, derivadas e integrais.</p>'
             },
             {
+                title: 'Palestrante no Instituto Paulista de Geriatria e Gerontologia (IPGG)',
+                description: '<p>Em outubro de 2017, fui <b>palestrante</b> no <b>Instituto Paulista de Geriatria e Gerontologia</b> apresentando <b>Meus caminhos para Aprender Python</b>. <a href="https://prezi.com/p/t8mwc_-mkikp/aprendendo-python/" target="_blank">Disponível aqui</a>.</p>'
+            },
+            {
                 title: 'Participante do IX Simpósio de Geriatria e Gerontologia',
                 description: '<p>Em novembro de 2017, fui <b>participante convidado</b> do <b>IX Simpósio de Geriatria e Gerontologia</b> apresentando <b>inovações tecnológicas de baixo custo (uso de Raspberry + RFID + Arduíno)</b> para a área da saúde.</p>'
             },
@@ -32,6 +36,10 @@ export class AchievementData implements Data<Achievement> {
             {
                 title: 'Promovido no Mercado de Trabalho durante a Pandemia',
                 description: '<p>Em setembro de 2020, com 1 ano e aproximadamente 4 meses trabalhando como Analista de Sistemas Júnior na empresa multinacional de tecnologia Accenture, <b>fui promovido para uma posição de Pleno durante um momento de pandemia global</b> causado pelo corona vírus com demissões em massa sendo feitas por muitas empresas.</p>'
+            },
+            {
+                title: '1ª Palestra em forma de Treinamento na Accenture do Brasil',
+                description: '<p>Nos dias 19 e 26 de novembro de 2020 <b>fui palestrante</b> apresentando um treinamento para profissionais da <b>Accenture, Avanade e Vivere Brasil</b> sobre o tema <b>Jira Query Language: uso prático do JQL</b> de forma remota (webconferência).</p>'
             }
         ];
     }
