@@ -832,6 +832,14 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Software Security Best Practices',
                             duration: '26/08/2020',
                             certificate: 'https://skillsoft.digitalbadges.skillsoft.com/24fe0d08-97f7-4319-a987-9b99e91ddd38'
+                        },
+                        {
+                            logo: `./img/courses/udemy.png`,
+                            name: 'Learn Apache Kafka for Beginners v2',
+                            place: 'Udemy',
+                            originalTitle: 'Learn Apache Kafka for Beginners v2',
+                            duration: '29/11/2020 (7,5h)',
+                            certificate: 'https://drive.google.com/file/d/1DpFEuOnkYehQvs6efPm5veKzqceoCxJG/view?usp=sharing'
                         }
                     ];
                 }
