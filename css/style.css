@@ -26,15 +26,16 @@ nav {
     align-items: flex-end;
     justify-content: center;
     color: #ffffff;
-    width: 100%;
+    min-width: 150px;
     text-shadow: 2px 2px 2px #000000;
 }
 #profile-projects img {
-    width: 80px;
+    width: 100px;
 }
 #profile-education img, #profile-courses img {
     padding: 15px;
-    width: 120px;
+    width: 140px;
+    height: 140px;
     filter: drop-shadow(1px 1px 5px #ccc);
     border-radius: 100%;
 }
@@ -46,6 +47,9 @@ nav {
     padding-top: 40px;
     margin-top: -40px;
     display: inline-block;
+}
+.logo-container {
+    min-width: 120px;
 }
 /* Materialize */
 .parallax-container {

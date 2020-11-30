@@ -10,7 +10,7 @@ export class ProjectView extends View<Project>{
             <div class="card">
                 <div class="card-content">
                     <div class="row">
-                        <div class="col m2 s12 center">
+                        <div class="col m2 s12 center logo-container">
                             <img src="${project.logo}">
                         </div>
                         <div class="col m10 s12">
