@@ -438,7 +438,15 @@ export class CourseData implements Data<Course> {
                 originalTitle: 'Learn Apache Kafka for Beginners v2',
                 duration: '29/11/2020 (7,5h)',
                 certificate: 'https://drive.google.com/file/d/1DpFEuOnkYehQvs6efPm5veKzqceoCxJG/view?usp=sharing'
-            }
+            },
+            {
+                logo: `./img/courses/pluralsight.png`,
+                name: 'Introduction to Testing in Java',
+                place: 'Pluralsight',
+                originalTitle: 'Introduction to Testing in Java',
+                duration: '30/11/2020 (3,9h)',
+                certificate: 'https://drive.google.com/file/d/192figGVp7-ID-rMLDVPOftms43w7kY9b/view?usp=sharing'
+            },
         ];
     }
 
