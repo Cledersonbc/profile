@@ -441,6 +441,14 @@ export class CourseData implements Data<Course> {
             },
             {
                 logo: `./img/courses/pluralsight.png`,
+                name: 'Introduction to Testing in Java',
+                place: 'Pluralsight',
+                originalTitle: 'Introduction to Testing in Java',
+                duration: '30/11/2020 (3,9h)',
+                certificate: 'https://drive.google.com/file/d/192figGVp7-ID-rMLDVPOftms43w7kY9b/view?usp=sharing'
+            },
+            {
+                logo: `./img/courses/pluralsight.png`,
                 name: 'TQ Security',
                 place: 'Pluralsight',
                 originalTitle: 'Technology Quotient - Security',

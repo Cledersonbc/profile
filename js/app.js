@@ -91,7 +91,7 @@ System.register("ts/views/CourseView", ["ts/views/View"], function (exports_8, c
                 <div class="card">
                     <div class="card-content">
                         <div class="row">
-                            <div class="col m2 s12 center">
+                            <div class="col m2 s12 center logo-container">
                                 <img src="${course.logo}">
                             </div>
                             <div class="col m10 s12">
@@ -132,7 +132,7 @@ System.register("ts/views/ProjectView", ["ts/views/index"], function (exports_9,
             <div class="card">
                 <div class="card-content">
                     <div class="row">
-                        <div class="col m2 s12 center">
+                        <div class="col m2 s12 center logo-container">
                             <img src="${project.logo}">
                         </div>
                         <div class="col m10 s12">
@@ -201,7 +201,7 @@ System.register("ts/views/EducationView", ["ts/views/index"], function (exports_
             <div class="card">
                 <div class="card-content">
                     <div class="row">
-                        <div class="col m2 s12 center">
+                        <div class="col m2 s12 center logo-container">
                             <img src="${education.logo}">
                         </div>
                         <div class="col m10 s12">
@@ -840,6 +840,14 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Learn Apache Kafka for Beginners v2',
                             duration: '29/11/2020 (7,5h)',
                             certificate: 'https://drive.google.com/file/d/1DpFEuOnkYehQvs6efPm5veKzqceoCxJG/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'Introduction to Testing in Java',
+                            place: 'Pluralsight',
+                            originalTitle: 'Introduction to Testing in Java',
+                            duration: '30/11/2020 (3,9h)',
+                            certificate: 'https://drive.google.com/file/d/192figGVp7-ID-rMLDVPOftms43w7kY9b/view?usp=sharing'
                         },
                         {
                             logo: `./img/courses/pluralsight.png`,
