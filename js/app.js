@@ -840,6 +840,38 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Learn Apache Kafka for Beginners v2',
                             duration: '29/11/2020 (7,5h)',
                             certificate: 'https://drive.google.com/file/d/1DpFEuOnkYehQvs6efPm5veKzqceoCxJG/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Security',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Security',
+                            duration: '08/02/2021 (1,5h)',
+                            certificate: 'https://drive.google.com/file/d/1Dcp0OHdC_C8ifHI_cAmMFie_rwcsoXQ4/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Agile & DevOps',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Agile & DevOps',
+                            duration: '01/03/2021 (1,7h)',
+                            certificate: 'https://drive.google.com/file/d/15ei2lULb-OkZfExOzQL3AwLJX4MmMfVW/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Blockchain',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Blockchain',
+                            duration: '29/03/2021 (1,5h)',
+                            certificate: 'https://drive.google.com/file/d/1ESzeYdsls2C0Gnh9PIQPyyVFPK4pPMM2/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Artificial Intelligence (AI)',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Artificial Intelligence (AI)',
+                            duration: '01/04/2021 (2h)',
+                            certificate: 'https://drive.google.com/file/d/1DM3Sfilo3L2kaXDrgdVIKoT3qFFh0YOK/view?usp=sharing'
                         }
                     ];
                 }
