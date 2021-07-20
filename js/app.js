@@ -811,6 +811,14 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                         },
                         {
                             logo: `./img/courses/skillsoft.jpg`,
+                            name: 'Docker Containers, Images & Swarms',
+                            place: 'Skillsoft',
+                            originalTitle: 'Docker Containers, Images & Swarms',
+                            duration: '11/03/2020',
+                            certificate: 'https://skillsoft.digitalbadges.skillsoft.com/d581414d-1d4a-478f-97e0-11321d7e3fa3'
+                        },
+                        {
+                            logo: `./img/courses/skillsoft.jpg`,
                             name: 'Certified Secure Software Lifecycle Professional (CSSLP) 2019: Core Concepts',
                             place: 'Skillsoft',
                             originalTitle: 'Certified Secure Software Lifecycle Professional (CSSLP) 2019: Core Concepts',
@@ -880,6 +888,62 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Technology Quotient - Artificial Intelligence (AI)',
                             duration: '01/04/2021 (2h)',
                             certificate: 'https://drive.google.com/file/d/1DM3Sfilo3L2kaXDrgdVIKoT3qFFh0YOK/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Enterprise Platforms',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Enterprise Platforms',
+                            duration: '03/05/2021 (1,5h)',
+                            certificate: 'https://drive.google.com/file/d/1GdqNJzV6n4P-51Wbvai3oEMebNrCdAiX/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Cloud',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Cloud',
+                            duration: '05/05/2021 (2,3h)',
+                            certificate: 'https://drive.google.com/file/d/1i7dXf0a0dSUosoF3ffE3sf8DZe819A-a/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/pluralsight.png`,
+                            name: 'TQ Data',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Data',
+                            duration: '10/05/2021 (1,5h)',
+                            certificate: 'https://drive.google.com/file/d/16LTOGcfhKOGMp1ahA2gFJIZuU4u_JSl2/view?usp=sharing'
+                        },
+                        {
+                            logo: `./img/courses/skillsoft.jpg`,
+                            name: 'API Security',
+                            place: 'Skillsoft',
+                            originalTitle: 'API Security',
+                            duration: '19/05/2021',
+                            certificate: 'https://skillsoft.digitalbadges.skillsoft.com/466ec515-d2ad-4d4e-89c2-14b726f5d7f7'
+                        },
+                        {
+                            logo: `./img/courses/skillsoft.jpg`,
+                            name: 'Top 10 List Items',
+                            place: 'Skillsoft',
+                            originalTitle: 'OWASP Top 10 List Items',
+                            duration: '06/07/2021',
+                            certificate: 'https://skillsoft.digitalbadges.skillsoft.com/4bb26226-56c4-4957-bf58-0e0d174ef49d'
+                        },
+                        {
+                            logo: `./img/courses/skillsoft.jpg`,
+                            name: 'Application Security Awareness & Validation',
+                            place: 'Skillsoft',
+                            originalTitle: 'Application Security Awareness & Validation',
+                            duration: '06/07/2021',
+                            certificate: 'https://skillsoft.digitalbadges.skillsoft.com/be3a5327-512a-44cd-9cb1-55d011344287'
+                        },
+                        {
+                            logo: `./img/courses/skillsoft.jpg`,
+                            name: 'Security Application Architecture & IAM',
+                            place: 'Skillsoft',
+                            originalTitle: 'Security Application Architecture & IAM',
+                            duration: '06/07/2021',
+                            certificate: 'https://skillsoft.digitalbadges.skillsoft.com/82bfd069-2685-4231-9192-d2f9c0362c8a'
                         }
                     ];
                 }
