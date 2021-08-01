@@ -944,6 +944,13 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Security Application Architecture & IAM',
                             duration: '06/07/2021',
                             certificate: 'https://skillsoft.digitalbadges.skillsoft.com/82bfd069-2685-4231-9192-d2f9c0362c8a'
+                        },
+                        {
+                            logo: `./img/courses/udemy.png`,
+                            name: 'Produtividade com VSCode',
+                            place: 'Udemy',
+                            originalTitle: 'Produtividade com VSCode',
+                            duration: '31/07/2021 (2h)'
                         }
                     ];
                 }
