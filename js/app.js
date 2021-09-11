@@ -951,6 +951,30 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             place: 'Udemy',
                             originalTitle: 'Produtividade com VSCode',
                             duration: '31/07/2021 (2h)'
+                        },
+                        {
+                            logo: './img/courses/pluralsight.png',
+                            name: 'TQ 5G & Edge Computing',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - 5G & Edge Computing',
+                            duration: '28/08/2021 (1,5h)',
+                            certificate: 'https://drive.google.com/file/d/1hzHc43WIL69PFU3kCwRTxUrC4az3sSHa/view?usp=sharing'
+                        },
+                        {
+                            logo: './img/courses/pluralsight.png',
+                            name: 'TQ Automation',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Automation',
+                            duration: '28/08/2021 (2h)',
+                            certificate: 'https://drive.google.com/file/d/199q_eNT7bTbixrCJ_vGSn-GNfappkc79/view?usp=sharing'
+                        },
+                        {
+                            logo: './img/courses/enap.png',
+                            name: 'Matemática Financeira',
+                            place: 'Escola Nacional de Administração Pública (ENAP)',
+                            originalTitle: 'Matemática Financeira',
+                            duration: '09/09/2021 - 11/09/2021 (20h)',
+                            certificate: 'https://drive.google.com/file/d/1KcZibnVV67WgMx0fjcVFiqn8WzpVCH8y/view?usp=sharing'
                         }
                     ];
                 }
