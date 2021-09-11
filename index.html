@@ -62,7 +62,7 @@
                 <div class="card-content">
                     <span class="card-title">Sobre</span>
                     <p>Clederson é Analista e Desenvolvedor de Sistemas com experiência em Engenharia de Software, cujo
-                        foco mais recente é voltado à <i>Quality Assurance</i> (QA), prezando boas práticas ágeis nos
+                        foco de atuação é <i>Quality Assurance</i> (QA), prezando boas práticas em projetos ágeis dos
                         segmentos financeiro (bancos) e de telecomunicações (operadoras do Brasil).</p>
                     <p>Pós-graduado em Tecnologia e Inovação pela Unidade de Pós-Graduação, Extensão e Pesquisa do
                         Centro Paula Souza; graduado em Análise e Desenvolvimento de Sistemas pela Fatec e técnico em
@@ -179,10 +179,10 @@
         SystemJS.config({
             baseURL: './js'
         });
-        var app = SystemJS.import('app.min.js');
+        const app = SystemJS.import('app.min.js');
         app.then(function (script) {
             SystemJS.import('ts/app').then(function (module) {
-                var app = new module.App();
+                const app = new module.App();
                 app.start();
             });
         })

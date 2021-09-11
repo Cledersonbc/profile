@@ -1,9 +1,7 @@
-import { Project } from '../models/index';
+import { Project } from "../models/index";
 import { View } from "./index";
 
-
-export class ProjectView extends View<Project>{
-    
+export class ProjectView extends View<Project> {
     template(project: Project): string {
         return `
         <div class="col s12 m12">
@@ -25,5 +23,4 @@ export class ProjectView extends View<Project>{
         </div>
         `;
     }
-    
 }
