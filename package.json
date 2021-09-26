@@ -21,10 +21,6 @@
   "homepage": "https://github.com/Cledersonbc/profile#readme",
   "devDependencies": {
     "@types/jquery": "^3.3.31",
-    "@typescript-eslint/eslint-plugin": "^4.28.5",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-config-airbnb-typescript": "^12.3.1",
     "grunt": "^1.0.4",
     "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony",

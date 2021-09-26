@@ -43,11 +43,31 @@ System.register("ts/models/Education", [], function (exports_5, context_5) {
         }
     };
 });
-System.register("ts/models/index", [], function (exports_6, context_6) {
+System.register("ts/models/index", ["ts/models/Course", "ts/models/Project", "ts/models/Achievement", "ts/models/Education"], function (exports_6, context_6) {
     "use strict";
     var __moduleName = context_6 && context_6.id;
+    function exportStar_1(m) {
+        var exports = {};
+        for (var n in m) {
+            if (n !== "default") exports[n] = m[n];
+        }
+        exports_6(exports);
+    }
     return {
-        setters: [],
+        setters: [
+            function (Course_1_1) {
+                exportStar_1(Course_1_1);
+            },
+            function (Project_1_1) {
+                exportStar_1(Project_1_1);
+            },
+            function (Achievement_1_1) {
+                exportStar_1(Achievement_1_1);
+            },
+            function (Education_1_1) {
+                exportStar_1(Education_1_1);
+            }
+        ],
         execute: function () {
         }
     };
@@ -226,7 +246,7 @@ System.register("ts/views/EducationView", ["ts/views/index"], function (exports_
 System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView", "ts/views/ProjectView", "ts/views/AchievementView", "ts/views/EducationView"], function (exports_12, context_12) {
     "use strict";
     var __moduleName = context_12 && context_12.id;
-    function exportStar_1(m) {
+    function exportStar_2(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
@@ -236,19 +256,19 @@ System.register("ts/views/index", ["ts/views/View", "ts/views/CourseView", "ts/v
     return {
         setters: [
             function (View_2_1) {
-                exportStar_1(View_2_1);
+                exportStar_2(View_2_1);
             },
             function (CourseView_1_1) {
-                exportStar_1(CourseView_1_1);
+                exportStar_2(CourseView_1_1);
             },
             function (ProjectView_1_1) {
-                exportStar_1(ProjectView_1_1);
+                exportStar_2(ProjectView_1_1);
             },
             function (AchievementView_1_1) {
-                exportStar_1(AchievementView_1_1);
+                exportStar_2(AchievementView_1_1);
             },
             function (EducationView_1_1) {
-                exportStar_1(EducationView_1_1);
+                exportStar_2(EducationView_1_1);
             }
         ],
         execute: function () {
@@ -359,10 +379,10 @@ System.register("ts/controllers/EducationController", ["ts/views/index"], functi
         }
     };
 });
-System.register("ts/controllers/index", ["ts/controllers/CourseController", "ts/controllers/ProjectController", "ts/controllers/AchievementController", "ts/controllers/EducationController"], function (exports_17, context_17) {
+System.register("ts/controllers/index", ["ts/controllers/Controller", "ts/controllers/CourseController", "ts/controllers/ProjectController", "ts/controllers/AchievementController", "ts/controllers/EducationController"], function (exports_17, context_17) {
     "use strict";
     var __moduleName = context_17 && context_17.id;
-    function exportStar_2(m) {
+    function exportStar_3(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
@@ -371,17 +391,20 @@ System.register("ts/controllers/index", ["ts/controllers/CourseController", "ts/
     }
     return {
         setters: [
+            function (Controller_1_1) {
+                exportStar_3(Controller_1_1);
+            },
             function (CourseController_1_1) {
-                exportStar_2(CourseController_1_1);
+                exportStar_3(CourseController_1_1);
             },
             function (ProjectController_1_1) {
-                exportStar_2(ProjectController_1_1);
+                exportStar_3(ProjectController_1_1);
             },
             function (AchievementController_1_1) {
-                exportStar_2(AchievementController_1_1);
+                exportStar_3(AchievementController_1_1);
             },
             function (EducationController_1_1) {
-                exportStar_2(EducationController_1_1);
+                exportStar_3(EducationController_1_1);
             }
         ],
         execute: function () {
@@ -975,6 +998,14 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Matemática Financeira',
                             duration: '09/09/2021 - 11/09/2021 (20h)',
                             certificate: 'https://drive.google.com/file/d/1KcZibnVV67WgMx0fjcVFiqn8WzpVCH8y/view?usp=sharing'
+                        },
+                        {
+                            logo: './img/courses/fatec.png',
+                            name: 'Raspagem de dados na web',
+                            place: 'Faculdade de Tecnologia do Estado de São Paulo (FATEC)',
+                            originalTitle: 'Raspagem de dados na web',
+                            duration: '20/09/2021 (2h)',
+                            certificate: 'https://drive.google.com/file/d/1JXnGU-aJDtFOeNrM56njZc0z-BGOg9VV/view?usp=sharing'
                         }
                     ];
                 }
@@ -1127,10 +1158,10 @@ System.register("ts/data/EducationData", [], function (exports_22, context_22) {
         }
     };
 });
-System.register("ts/data/index", ["ts/data/CourseData", "ts/data/ProjectData", "ts/data/AchievementData", "ts/data/EducationData"], function (exports_23, context_23) {
+System.register("ts/data/index", ["ts/data/Data", "ts/data/CourseData", "ts/data/ProjectData", "ts/data/AchievementData", "ts/data/EducationData"], function (exports_23, context_23) {
     "use strict";
     var __moduleName = context_23 && context_23.id;
-    function exportStar_3(m) {
+    function exportStar_4(m) {
         var exports = {};
         for (var n in m) {
             if (n !== "default") exports[n] = m[n];
@@ -1139,17 +1170,20 @@ System.register("ts/data/index", ["ts/data/CourseData", "ts/data/ProjectData", "
     }
     return {
         setters: [
+            function (Data_1_1) {
+                exportStar_4(Data_1_1);
+            },
             function (CourseData_1_1) {
-                exportStar_3(CourseData_1_1);
+                exportStar_4(CourseData_1_1);
             },
             function (ProjectData_1_1) {
-                exportStar_3(ProjectData_1_1);
+                exportStar_4(ProjectData_1_1);
             },
             function (AchievementData_1_1) {
-                exportStar_3(AchievementData_1_1);
+                exportStar_4(AchievementData_1_1);
             },
             function (EducationData_1_1) {
-                exportStar_3(EducationData_1_1);
+                exportStar_4(EducationData_1_1);
             }
         ],
         execute: function () {

@@ -1,5 +1,5 @@
-import { Course } from "../models/index";
-import { Data } from "./index";
+import { Course } from '../models/index';
+import { Data } from './index';
 
 export class CourseData implements Data<Course> {
 
@@ -573,6 +573,14 @@ export class CourseData implements Data<Course> {
                 originalTitle: 'Matemática Financeira',
                 duration: '09/09/2021 - 11/09/2021 (20h)',
                 certificate: 'https://drive.google.com/file/d/1KcZibnVV67WgMx0fjcVFiqn8WzpVCH8y/view?usp=sharing'
+            },
+            {
+                logo: './img/courses/fatec.png',
+                name: 'Raspagem de dados na web',
+                place: 'Faculdade de Tecnologia do Estado de São Paulo (FATEC)',
+                originalTitle: 'Raspagem de dados na web',
+                duration: '20/09/2021 (2h)',
+                certificate: 'https://drive.google.com/file/d/1JXnGU-aJDtFOeNrM56njZc0z-BGOg9VV/view?usp=sharing'
             }
         ];
     }
