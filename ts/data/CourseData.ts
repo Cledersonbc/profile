@@ -581,6 +581,22 @@ export class CourseData implements Data<Course> {
                 originalTitle: 'Raspagem de dados na web',
                 duration: '20/09/2021 (2h)',
                 certificate: 'https://drive.google.com/file/d/1JXnGU-aJDtFOeNrM56njZc0z-BGOg9VV/view?usp=sharing'
+            },
+            {
+                logo: './img/courses/fatec.png',
+                name: 'Inteligência Artificial: origem e aplicabilidade',
+                place: 'Faculdade de Tecnologia do Estado de São Paulo (FATEC)',
+                originalTitle: 'Mesa  Redonda:  Experiências  Profissionais; mesa sobre Inteligência Artificial: origem e aplicabilidade',
+                duration: '08/10/2021',
+                certificate: 'https://drive.google.com/file/d/1mZ-WLYZu-8lqAODPddJ5XQlS_eCdoWGw/view?usp=sharing'
+            },
+            {
+                logo: './img/courses/pluralsight.png',
+                name: 'TQ Sustainability & Technology',
+                place: 'Pluralsight',
+                originalTitle: 'Technology Quotient - Sustainability & Technology',
+                duration: '13/11/2021 (1,5h)',
+                certificate: 'https://drive.google.com/file/d/1S9uO9Q7vulMP-22s-hAesYvinh0OY07-/view?usp=sharing'
             }
         ];
     }

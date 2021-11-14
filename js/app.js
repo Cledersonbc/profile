@@ -1006,6 +1006,22 @@ System.register("ts/data/CourseData", [], function (exports_19, context_19) {
                             originalTitle: 'Raspagem de dados na web',
                             duration: '20/09/2021 (2h)',
                             certificate: 'https://drive.google.com/file/d/1JXnGU-aJDtFOeNrM56njZc0z-BGOg9VV/view?usp=sharing'
+                        },
+                        {
+                            logo: './img/courses/fatec.png',
+                            name: 'Inteligência Artificial: origem e aplicabilidade',
+                            place: 'Faculdade de Tecnologia do Estado de São Paulo (FATEC)',
+                            originalTitle: 'Mesa  Redonda:  Experiências  Profissionais; mesa sobre Inteligência Artificial: origem e aplicabilidade',
+                            duration: '08/10/2021',
+                            certificate: 'https://drive.google.com/file/d/1mZ-WLYZu-8lqAODPddJ5XQlS_eCdoWGw/view?usp=sharing'
+                        },
+                        {
+                            logo: './img/courses/pluralsight.png',
+                            name: 'TQ Sustainability & Technology',
+                            place: 'Pluralsight',
+                            originalTitle: 'Technology Quotient - Sustainability & Technology',
+                            duration: '13/11/2021 (1,5h)',
+                            certificate: 'https://drive.google.com/file/d/1S9uO9Q7vulMP-22s-hAesYvinh0OY07-/view?usp=sharing'
                         }
                     ];
                 }
@@ -1113,6 +1129,10 @@ System.register("ts/data/AchievementData", [], function (exports_21, context_21)
                             title: '1ª Palestra em forma de Treinamento na Accenture do Brasil',
                             description: '<p>Nos dias 19 e 26 de novembro de 2020 <b>fui palestrante</b> apresentando um treinamento para profissionais da <b>Accenture, Avanade e Vivere Brasil</b> sobre o tema <b>Jira Query Language: uso prático do JQL</b> de forma remota (webconferência).</p>',
                         },
+                        {
+                            title: 'Palestrante na Faculdade de Tecnologia da Zona Leste (FATEC)',
+                            description: '<p>Em novembro de 2021 fui convidado como <b>palestrante</b> na "Feira de Desenvolvimento Profissional e Negócios", da <b>Faculdade de Tecnologia da Zona Leste (FATEC)</b>, para falar sobre a <b>Carreira de Tecnologia</b> (<a href="https://drive.google.com/file/d/1cpUNBL05dAsfdkHO8e7Mamg-LRkwRpJx/view?usp=sharing" target="_blank" rel="nofollow">apresentação disponível aqui</a>). Ao final da palestra pude sanar muitas dúvidas de alunos sobre a área.<a href="https://drive.google.com/file/d/1umoiOWMfNomW8DYcxIWQAjK9cxIJjdps/view?usp=sharing" target="_blank">Certificado<sup>🡥</sup></a>.</p>'
+                        }
                     ];
                 }
             };

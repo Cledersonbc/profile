@@ -40,6 +40,10 @@ export class AchievementData implements Data<Achievement> {
                 title: '1ª Palestra em forma de Treinamento na Accenture do Brasil',
                 description: '<p>Nos dias 19 e 26 de novembro de 2020 <b>fui palestrante</b> apresentando um treinamento para profissionais da <b>Accenture, Avanade e Vivere Brasil</b> sobre o tema <b>Jira Query Language: uso prático do JQL</b> de forma remota (webconferência).</p>',
             },
+            {
+                title: 'Palestrante na Faculdade de Tecnologia da Zona Leste (FATEC)',
+                description: '<p>Em novembro de 2021 fui convidado como <b>palestrante</b> na "Feira de Desenvolvimento Profissional e Negócios", da <b>Faculdade de Tecnologia da Zona Leste (FATEC)</b>, para falar sobre a <b>Carreira de Tecnologia</b> (<a href="https://drive.google.com/file/d/1cpUNBL05dAsfdkHO8e7Mamg-LRkwRpJx/view?usp=sharing" target="_blank" rel="nofollow">apresentação disponível aqui</a>). Ao final da palestra pude sanar muitas dúvidas de alunos sobre a área.<a href="https://drive.google.com/file/d/1umoiOWMfNomW8DYcxIWQAjK9cxIJjdps/view?usp=sharing" target="_blank">Certificado<sup>🡥</sup></a>.</p>'
+            }
         ];
     }
 }
